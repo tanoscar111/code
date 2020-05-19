@@ -1,0 +1,100 @@
+.w-100 {
+    width: 50%;
+    height: 100vh;
+}
+
+.slide1 {
+    width: 50%;
+    
+    opacity: 0;
+    animation: nutquaphai 2s forwards;
+    animation-delay: 2.4s;
+
+}
+@keyframes nutquaphai {
+    0% {
+        opacity: 0;
+        transform: scaleX(2) translatex(1000px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+main {
+    display: flex;
+}
+
+article {
+    padding: 1em 5em 2em 4em; 
+}
+.name2{
+    animation: nutqua 2s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+@keyframes nutqua {
+    0% {
+        opacity: 0;
+        transform: scaleX(2) translatex(-1000px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.Name {
+    width: 50%;
+   
+    background-color: #1a1a1a;
+    box-shadow: 13 15px 50px white;
+    
+}
+
+article h3 {
+    font-size: 21px;
+    color: #c69c6d;
+}
+
+.Name h2 {
+    color: #c69c6d;
+    font-size: 4rem;
+    text-align: center;
+    color: transparent;
+    opacity: 0;
+    animation: nutlen 2s forwards;
+    animation-delay: 0.7s;
+    text-shadow: -4px 4px  #c69c6d, -3px 3px #c69c6d, -2px 2px rgba(179, 179, 179, .2), -1px 1px rgba(179, 179, 179, .2), 0px 0px rgba(128, 128, 128, .5), 1px -1px rgba(77, 77, 77, .6), 2px -2px rgba(77, 77, 77, .7), 3px -3px rgba(82, 82, 82, .8), 4px -4px rgba(77, 77, 77, .9), 5px -5px rgba(77, 77, 77, 1);
+}
+@keyframes nutlen {
+    0% {
+        opacity: 0;
+        transform: scaleY(2) translateY(-400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes nutlen {
+    0% {
+        opacity: 0;
+        transform: scaleY(2) translateY(-400px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:870px){
+    main{
+        flex-direction: column;
+    }
+    .Name{
+        width: 100%;
+    }
+    .slide1 {
+        width: 100%;
+    }
+}
